@@ -1,0 +1,78 @@
+<!--
+    tag de formatacoes
+    samp, kdb, code, var
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid rgb(0, 0, 0);
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="inedex.html">Ir para Iframes</a>
+
+    <div id="Comando pc">
+      <h4>Mensagem do computador TAG SAMP</h4>
+
+      <p>
+        Arquivo nao encontrado.
+        <br />
+        pressione F1 para continuar
+      </p>
+      <hr />
+      <p>
+        <samp>
+          Arquivo nao encontrado.
+          <br />
+          pressione F1 para continuar
+        </samp>
+      </p>
+    </div>
+
+    <div id="Comando de teclado">
+      <h4>Mensagem do computador TAG KBD</h4>
+
+      <p>pressione para salvar o arquivo: Ctrl + S</p>
+      <hr />
+      <p>pressione para salvar o arquivo: <kbd>Ctrl + S </kbd></p>
+    </div>
+
+    <div id="Calculos">
+      <h4>Mensagem do computador, TAG CODE</h4>
+      <p>x=5 y=2 z= x + y</p>
+
+      <hr />
+
+      <pre>
+        <code>
+        x=5 
+        y=2
+        z= x + y
+        </code>
+       </pre>
+    </div>
+
+    <div id="para formulas">
+        <h4>Mensagem do computador, TAG VAR</h4>
+      <p>
+          A Area do triangulo é: 1/2 x b x >a, onde b é a base, e a é a altura.
+        </p>
+        
+        <hr />
+        
+        <p>
+            
+            A Area do triangulo é: 1/2 x <var>b</var> x <var>a</var>, onde
+            <var>b</var> é a base, e <var>a</var> é a altura.
+      </p>
+    </div>
+  </body>
+</html>

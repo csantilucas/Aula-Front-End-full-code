@@ -1,0 +1,36 @@
+footer {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    
+  }
+
+  header {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    text-align: center; 
+    }
+    nav {
+        border: 1px solid rgb(0, 0, 0);
+        margin: 10px;
+        padding: 10px;
+        text-align: center; 
+    }
+
+    section {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+  }
+
+  img {
+    height: 150px;
+    
+    
+  }
+#caneca2 
+{
+    height: 90px;
+    text-align: center;
+}

@@ -1,0 +1,180 @@
+header {
+  background-color: #033861;
+  border-radius: 0 0 10px 10px;
+  margin: 0 0 100px 0;
+  margin-top: 0%;
+}
+header div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: s;
+  justify-content: space-around;
+}
+header h2 {
+  font-size: xxx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  /* display: flex;
+    overflow-x: auto; */
+}
+
+i {
+  font-size: 200px;
+  margin: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.icon {
+  font-size: 200px;
+  margin: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tabelas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.social {
+  color: #033861;
+  width: 300px;
+  font-size: 30px;
+  display: flex;
+}
+
+.table-container {
+  display: inline-block;
+  overflow-x: auto;
+  width: 305px;
+  height: 150px;
+  align-self: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid red;
+  padding: 10px;
+  text-align: center;
+  border-collapse: collapse; /*retira as bordas sobreçalentes */
+}
+
+tr:nth-child(even) {
+  background-color: #dfdbdb;
+}
+
+.position {
+  position: fixed;
+  bottom: 300px;
+  left: 0px;
+}
+.position > i {
+  font-size: 50px;
+  color: red;
+}
+
+#space {
+  height: 100dvh;
+}
+
+.link:link{
+  color: red;
+}
+.link:visited{
+    color: green;
+}
+
+.link:hover{
+    color: hotpink;
+}
+
+.ink:active{
+    color: blue;
+}
+
+q[lang="no"] {
+    quotes: "&&" "$$";
+}
+
+
+
+/* 
+
+    tudo que tem as letras da classe vai ser aplicado
+[class^="coloque a classe aqui"]{
+}
+
+    tudo que tiver as letras vai ser aplicado
+[class*="coloque a classe aqui"]{
+
+
+}   
+
+*/
+
+/* SELETORES DE ATRIBUTOS */
+
+/* SELECIONA O ATRIBUTO ESPECIFICO */
+
+a[target="_blank"] {
+    background-color: yellow;
+  }
+  
+  img[title~="coruja"] {
+    border: 5px solid green;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  img[title~="cavalo"] {
+    border: 5px solid brown;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* SELECIONA O NOME QUE ESTÁ DE INICIO NA CLASS
+  EX: EX-QUALQUER-COISA */
+  
+  [class^="ex"] {
+    background: green;
+    color: white;
+  }
+  
+  /* SELECIONA TUDO O QUE TEM TOP SEPARADO
+  EX: TOP-ALGUMA-COISA
+  EX2: TOP */
+  
+  [class^="top"] {
+    background: blueviolet;
+  }
+  
+  /* SELECIONA TUDO O QUE TIVER CONT NA CLASSE */
+  /* [class*="cont"] {
+    background: bisque;
+  } */
+

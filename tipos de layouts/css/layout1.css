@@ -1,0 +1,81 @@
+body{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#q{
+    background-color: antiquewhite;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 100px 0;
+}
+
+a{
+    border: 10px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+div{
+    display: grid
+    
+}
+img{
+    max-width: 100%;
+    display: block ;
+    
+}
+.grid1{
+    margin: 100px 0 0 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+
+/* SELECIONA AS DIVS QUE VC QUISER
+
+----------SELETOR CSS--------- */
+.grid1 > div:nth-child(n + 4) {
+/*----------SELETOR CSS--------- */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio{
+    grid-column:1;
+    grid-row: 2 / 5;
+    border-top: 10px solid tomato;
+    display: block;
+
+}
+
+@media (max-width: 600px){
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 > div:nth-child(n + 4){
+        display: block;
+    }
+
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}

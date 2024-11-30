@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/cadastrar.php">
+      <label>Digite seu processador favorito</label>
+      <br />
+      <input list="processador" />
+      <datalist id="processador">
+        <option value="intel i3"></option>
+        <option value="intel i5"></option>
+        <option value="intel i7"></option>
+        <option value="intel i9"></option>
+        <option value="ryzen 3"></option>
+        <option value="ryzen 5"></option>
+        <option value="ryzen 7"></option>
+        <option value="ryzen 9"></option>
+      </datalist>
+    </form>
+    <br />
+
+    <form action="/cadastrar.php">
+      <label>Digite sua marca de informatica preferida</label>
+      <br />
+      <input list="marca" />
+      <datalist id="marca">
+        <option value="intel"></option>
+        <option value="AMD"></option>
+        <option value="NVidia"></option>
+        <option value="IBM"></option>
+        <option value="APPLE"></option>
+        <option value="GIGABYTE"></option>
+        <option value="ASUS"></option>
+        <option value="MSI"></option>
+        <option value="Samsung"></option>
+      </datalist>
+    </form>
+    <br />
+    <form action="/cadastrar.php">
+      <label>Digite sua loja preferida</label>
+      <br />
+      <input list="loja" />
+      <datalist id="loja">
+        <option value="Pichau"></option>
+        <option value="Kabum"></option>
+        <option value="SHOPinfo"></option>
+        <option value="Terabyte"></option>
+        <option value="Aliexpress"></option>
+      </datalist>
+    </form>
+
+    <br>
+    <br>
+
+<!-- FORMACTION -->
+
+    <form action="/login.php" method="post">
+        <pre>
+        <fieldset>
+        <label>usuario</label>
+        
+        <input list="usuarios" required />
+        <datalist id="usuario">
+            
+          <option value="tiago"></option>
+          <option value="Augusto"></option>
+          <option value="Fabio"></option>
+          <option value="paulo"></option>
+          <option value="lucas"></option>
+        </datalist>
+
+        <label>senha</label><br>
+        <input type="password" id="senha" name="senha" required>
+        
+        <input type="submit" value="login">
+        <input type="submit" formaction="adm/login.php" value="login como admin" >
+      </fieldset>
+        </pre>
+    </form>
+
+
+<!-- FORMACTION COM FORMMETHOD -->
+
+    <form action="/login.php">
+        <pre>
+        <fieldset>
+        <label>usuario</label>
+        
+        <input list="usuarios" required />
+        <datalist id="usuario">
+            
+          <option value="tiago"></option>
+          <option value="Augusto"></option>
+          <option value="Fabio"></option>
+          <option value="paulo"></option>
+          <option value="lucas"></option>
+        </datalist>
+
+        <label>senha</label><br>
+        <input type="password" id="senha" name="senha" required>
+        
+        <input type="submit" formmethod="get" value="login (get)">
+        <input type="submit"  formmethod="post" formaction="adm/login.php" value="login como admin (post)" >
+      </fieldset>
+        </pre>
+    </form>
+
+    
+<!-- FORMACTION, FORMMETHOD E FORMTARGET-->
+    
+<form action="/login.php">
+    <pre>
+    <fieldset>
+    <label>usuario</label>
+    
+    <input list="usuarios" required />
+    <datalist id="usuarios">
+        
+      <option value="tiago"></option>
+      <option value="Augusto"></option>
+      <option value="Fabio"></option>
+      <option value="paulo"></option>
+      <option value="lucas"></option>
+    </datalist>
+
+    <label>senha</label><br>
+    <input type="password" id="senha" name="senha" required>
+    
+    <input type="submit" formtarget="_blank" formmethod="get" value="login (get)">
+    <input type="submit"  formmethod="post" formaction="adm/login.php" value="login como admin (post)" >
+  </fieldset>
+    </pre>
+</form>
+
+
+
+<video height="100" width="300" autoplay>
+    <source src="alice.mp4" 
+    type="video.mp4"/>
+</video>
+
+
+
+
+
+
+
+
+
+    <!-- <form action="auth/login.php">
+        <label for="user">user:</label>
+        <input type="text" id="user" name="name"><br><br>
+        <label for="passoword">passoword:</label>
+        <input type="password" id="passoword" name="passoword"><br><br>
+        <input type="submit" value="login">
+        <input type="submit" formaction="auth/admin.php" value="login as admin">
+    </form> -->
+
+
+
+  </body>
+</html>
